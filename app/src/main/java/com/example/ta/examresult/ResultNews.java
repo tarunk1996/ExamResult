@@ -21,9 +21,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by TA on 27-04-2017.
- */
 
 public class ResultNews extends android.support.v4.app.ListFragment {
 
@@ -51,7 +48,7 @@ public class ResultNews extends android.support.v4.app.ListFragment {
             links = new ArrayList();
             try
             {
-                URL url = new URL("https://news.google.com/news?cf=all&hl=en&pz=1&ned=in&topic=n&output=rss");
+                URL url = new URL("https://news.google.de/news/feeds?pz=1&cf=all&ned=de&hl=de&q=CBSE+10th+Result&output=rss");
                 XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
                 factory.setNamespaceAware(false);
                 XmlPullParser xpp = factory.newPullParser();
